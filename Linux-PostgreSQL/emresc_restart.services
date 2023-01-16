@@ -1,0 +1,10 @@
+[Unit]
+Description= emresc scriptini, her açılışta başlatan servis.
+
+[Service]
+type=simple
+ExecStart=/home/emrem/script.sh
+Restart=always
+
+[Install]
+WantedBy=multi.user.target
